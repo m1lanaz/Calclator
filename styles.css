@@ -1,6 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
 * {
     padding: 0%;
     margin:0%;
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Montserrat';
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEDE8;
+}
+
+.calcWhole {
+    width: 400px;
+    height: 500px;
+    background-color: #46444B;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.screen {
+    width: 350px;
+    height: 100px;
+    background-color: #EDEDE8;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: solid black 2px;
+}
+
+.buttons {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    overflow: auto;
+}
+
+.buttons button.clear {
+    grid-column: 1/3;
+    background-color: #F5B7CC;
+
+}
+
+.buttons button.delete {
+    grid-column: 3/5;
+    background-color: #F4D8FE;
+}
+
+.buttons button {
+    background-color: aliceblue;
+    text-align: center;
+    border: none;
+    border: solid black 2px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 19px;
+} 
